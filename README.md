@@ -9,6 +9,9 @@ warehouse-first with **BigQuery** and **Power BI (DAX)** on 100,000 real orders.
 > a supplier, so it is a fair proxy. With a company's internal data this would extend
 > into a full supplier scorecard with fill rate and returns.
 
+**Live dashboard:** [Open in Power BI](https://app.powerbi.com/groups/me/reports/53c8d2f4-a3a5-49fb-86c5-e5bc5b48c6a2/f0516fb98e5990057174?experience=power-bi)
+(sign-in may be required)
+
 ---
 
 ## The problem
@@ -52,8 +55,9 @@ supplier-scorecard/
 │   └── PROJECT_NOTES.md
 └── dashboard.pdf                     # exported report
 ```
-> Raw data is not committed. Download the Olist dataset from its public source and load
-> it with `warehouse/load_to_bigquery.sh`.
+> The Olist source data is included under `warehouse/data/`, so the project runs
+> end to end from a single clone. See `warehouse/data/README.md` for the file list
+> and license.
 
 ## How to reproduce
 1. Create a BigQuery project and dataset, upload the 6 Olist CSVs to Cloud Shell.
